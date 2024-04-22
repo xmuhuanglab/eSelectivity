@@ -1,6 +1,6 @@
 # SPE score and SEL score
 ## Introduction
-We developed an approach to systematically analyze the regulatory networks between enhancers and promoters across different cell types at the genome scale based on the E-P interactions predicted by the ABC model. 
+We developed an approach to systematically analyze the regulatory networks between enhancers and promoters across different cell types at the genome scale based on the E-P interactions predicted by the ABC model [1]. 
 ABC E-P links for more celltypes can be downloaded [here](https://mitra.stanford.edu/engreitz/oak/public/Nasser2021/AllPredictions.AvgHiC.ABC0.015.minus150.ForABCPaperV3.txt.gz).
 
 ## Steps
@@ -88,4 +88,4 @@ ggsave(p,filename = "spescore_selscore_cluster_dotplot.jpg",height = 4,width = 4
 
 
 ## Reference
-[Nasser J, Bergman DT, Fulco CP, Guckelberger P, Doughty BR, Patwardhan TA, Jones TR, Nguyen TH, Ulirsch JC, Lekschas F et al: Genome-wide enhancer maps link risk variants to disease genes. Nature 2021, 593(7858):238-243.](https://doi.org/10.1038/s41586-021-03446-x)
+1. [Nasser J, Bergman DT, Fulco CP, Guckelberger P, Doughty BR, Patwardhan TA, Jones TR, Nguyen TH, Ulirsch JC, Lekschas F et al: Genome-wide enhancer maps link risk variants to disease genes. Nature 2021, 593(7858):238-243.](https://doi.org/10.1038/s41586-021-03446-x)
