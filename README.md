@@ -28,6 +28,7 @@ sepBinaryMatrix(allEP_binary, # The binary matrix of all EP (the output of step1
 ```
 ### 3. Caculate SPE score and SEL score for each gene
 
+
 ![image](https://github.com/xmuhuanglab/eSelectivity/blob/main/image/step2.jpg)
 
 ```r
