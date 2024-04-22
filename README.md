@@ -1,7 +1,17 @@
 # SPE scores and SEL scores
+## Introduction
+We developed an approach to systematically analyze the regulatory networks between enhancers and promoters across different cell types at the genome scale based on the E-P interactions predicted by the ABC model. 
 ABC E-P links for more celltypes can be downloaded [here](https://mitra.stanford.edu/engreitz/oak/public/Nasser2021/AllPredictions.AvgHiC.ABC0.015.minus150.ForABCPaperV3.txt.gz).
 
 ## Steps
+```r
+setwd("Workdir")
+rm(list=ls())
+library(ggplot2)
+library(tidyr)
+library(factoextra)
+source("./allfunction.R")
+```
 ### 1. Creat E-P link binary matrix
 
 ![image](https://github.com/xmuhuanglab/eSelectivity/blob/main/image/step1.jpg)
@@ -11,7 +21,7 @@ ABC E-P links for more celltypes can be downloaded [here](https://mitra.stanford
 datapath <- "./data/"
 suffix <- "_EP.txt"
 allEP_binary <- binaryMatrix(datapath, # The filepath of EP link files for each cell
-							        suffix # The suffix following the cell type in the filename
+                             suffix # The suffix following the cell type in the filename
 )
 
 # save
@@ -28,8 +38,6 @@ sepBinaryMatrix(allEP_binary, # The binary matrix of all EP (the output of step1
 ```
 ### 3. Caculate SPE score and SEL score for each gene
 
-
-
 ![image](https://github.com/xmuhuanglab/eSelectivity/blob/main/image/step2.jpg)
 
 ```r
@@ -44,9 +52,6 @@ write.table(score_matrix, "SPEscore_SELscore_matrix_raw.txt", sep="\t", quote = 
 ```
 ### 4. K-means cluster and plot
 ```r
-library(factoextra)
-library(ggplot)
-
 score_matrix <- read.delim("SPEscore_SELscore_matrix_raw.txt", skip=0, header=T, check.names = FALSE,sep = "\t",stringsAsFactors = F)
 
 # cluster
