@@ -64,7 +64,7 @@ write.table(score_matrix_cluster,file = "spescore_selscore_matrix_kmeans_cluster
 
 # plot
 score_matrix_cluster <- read.delim("spescore_selscore_matrix_kmeans_cluster.txt", skip=0, header=T, check.names = FALSE,sep = "\t",stringsAsFactors = F)
-score_matrix_cluster$cluster <- factor(score_matrix_cluster$cluster)
+score_matrix_cluster$cluster <- factor(score_matrix_cluster$cluster, levels = c(1:3))
 
 palette <- c("#B5C3C4","#BAD873","#C16EC6")
 
