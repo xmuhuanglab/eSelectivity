@@ -41,7 +41,7 @@ sepBinaryMatrix(allEP_binary, # The binary matrix of all EP (the output of step1
 ![image](https://github.com/xmuhuanglab/eSelectivity/blob/main/image/step2.jpg)
 
 ```r
-allEP_binary <- readRDS(file = "allEP_binary.rds"))
+allEP_binary <- readRDS(file = "allEP_binary.rds")
 seppath <- "./gene_EP/"
 
 score_matrix <- calculateScore(allEP_binary, # The binary matrix of all EP (the output of step1)
@@ -88,5 +88,9 @@ ggsave(p,filename = "spescore_selscore_cluster_dotplot.jpg",height = 4,width = 4
 
 
 ## Reference
-[Nasser J, Bergman DT, Fulco CP, Guckelberger P, Doughty BR, Patwardhan TA, Jones TR, Nguyen TH, Ulirsch JC, Lekschas F et al: Genome-wide enhancer maps link risk variants to disease genes. Nature 2021, 593(7858):238-243.](https://doi.org/10.1038/s41586-021-03446-x)
+[Nasser J, Bergman DT, Fulco CP, Guckelberger P, Doughty BR, Patwardhan TA, Jones TR, Nguyen TH, Ulirsch JC, Lekschas F et al: Genome-wide enhancer maps link risk variants to disease genes. Nature 2021, 593(7858):238-243.](https://doi.org/10.1038/s41586-021-03446-x
+        
+        
+        
+        )
 
