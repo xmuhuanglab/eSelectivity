@@ -1,4 +1,4 @@
-# SPE scores and SEL scores
+# SPE score and SEL score
 ## Introduction
 We developed an approach to systematically analyze the regulatory networks between enhancers and promoters across different cell types at the genome scale based on the E-P interactions predicted by the ABC model. 
 ABC E-P links for more celltypes can be downloaded [here](https://mitra.stanford.edu/engreitz/oak/public/Nasser2021/AllPredictions.AvgHiC.ABC0.015.minus150.ForABCPaperV3.txt.gz).
