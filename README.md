@@ -88,8 +88,4 @@ ggsave(p,filename = "spescore_selscore_cluster_dotplot.jpg",height = 4,width = 4
 
 
 ## Reference
-1. [Nasser J, Bergman DT, Fulco CP, Guckelberger P, Doughty BR, Patwardhan TA, Jones TR, Nguyen TH, Ulirsch JC, Lekschas F et al: Genome-wide enhancer maps link risk variants to disease genes. Nature 2021, 593(7858):238-243.](https://doi.org/10.1038/s41586-021-03446-x
-        
-        
-        
-        )
+1. [Nasser J, Bergman DT, Fulco CP, Guckelberger P, Doughty BR, Patwardhan TA, Jones TR, Nguyen TH, Ulirsch JC, Lekschas F et al: Genome-wide enhancer maps link risk variants to disease genes. Nature 2021, 593(7858):238-243.](https://doi.org/10.1038/s41586-021-03446-x)
